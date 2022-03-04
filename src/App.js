@@ -1,12 +1,13 @@
 import './App.css';
-import { Button } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 
 
 function App() {
   return (
     <div className="App">
-  
-      
+    <ThemeProvider>
+
+    </ThemeProvider>
     </div>
   );
 }
