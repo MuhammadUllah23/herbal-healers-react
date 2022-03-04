@@ -1,16 +1,16 @@
-import { createMuiTheme } from "@mui/material/core";
+import { createTheme } from "@mui/material"
 
-const ufoGreen = "#3cd070"
+const forestGreen = "#228b22"
 const yellowOrange = "#ffae42"
 
-export default createMuiTheme({
+export default createTheme({
     palette: {
         common: {
-            green: `${ufoGreen}`,
+            green: `${forestGreen}`,
             orange: `${yellowOrange}`
         },
         primary: {
-            main: `${ufoGreen}`
+            main: `${forestGreen}`
         },
         secondary: {
             main: `${yellowOrange}`
