@@ -7,6 +7,7 @@ import { makeStyles } from '@mui/styles';
 import { useTheme } from "@mui/material";
 import { useScrollTrigger } from "@mui/material";
 import { Typography } from "@mui/material";
+import { Tabs, Tab } from "@mui/material";
 
 
 function ElevationScroll(props) {
@@ -38,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBar() {
 
     const classes = useStyles()
+
+    
     return(
         <React.Fragment>
         
