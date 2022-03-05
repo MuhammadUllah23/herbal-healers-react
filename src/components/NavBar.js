@@ -45,6 +45,10 @@ export default function NavBar() {
         {name: "Remedies", link: "/remedies"}
     ]
 
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+      };
+
     const tabs = (
             <React.Fragment>
                 <Tabs value={value} onChange={handleChange}>
