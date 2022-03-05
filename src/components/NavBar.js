@@ -25,16 +25,19 @@ function ElevationScroll(props) {
 }
 
 const useStyles = makeStyles(theme => ({
-
+    appbar: {
+        zIndex: theme.zIndex.modal +  1
+    }
 }))
 
 export default function NavBar() {
 
+    const classes = useStyles()
     return(
         <React.Fragment>
-            <AppBar>
+            <AppBar className={classes.appbar}>
                 <Toolbar>
-                    
+
                 </Toolbar>
             </AppBar>
         </React.Fragment>
