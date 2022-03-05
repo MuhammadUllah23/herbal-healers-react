@@ -41,10 +41,13 @@ export default function NavBar() {
     const classes = useStyles()
 
     const tabOptions = [
-        {name: "Home", link: "/"},
         {name: "Illnesses", link: "/illnesse"},
         {name: "Remedies", link: "/remedies"}
     ]
+
+    const tabs = (
+
+    )
 
     return(
         <React.Fragment>
