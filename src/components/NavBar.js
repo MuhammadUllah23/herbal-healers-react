@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { AppBar, Toolbar, useMediaQuery } from "@mui/material";
-import { makeStyles } from "@mui/material";
+import { makeStyles } from '@mui/styles';
 import { useTheme } from "@mui/material";
 import { useScrollTrigger } from "@mui/material";
 import { Typography } from "@mui/material";
@@ -25,7 +25,7 @@ function ElevationScroll(props) {
     });
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     appbar: {
         zIndex: theme.zIndex.modal +  1
     },
@@ -41,7 +41,7 @@ export default function NavBar() {
     return(
         <React.Fragment>
         
-            <AppBar className={classes.appbar}>
+            <AppBar className={classes.appbar} position="fixed" >
                 <Toolbar className={classes.toolbarMargin} disableGutters>
                    
                 </Toolbar>
