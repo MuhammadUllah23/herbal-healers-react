@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function NavBar() {
-
+    const [value, setValue] = useState()
     const classes = useStyles()
 
     const tabOptions = [
@@ -46,7 +46,11 @@ export default function NavBar() {
     ]
 
     const tabs = (
+            <React.Fragment>
+                <Tabs value={value} onChange={handleChange}>
 
+                </Tabs>
+            </React.Fragment>
     )
 
     return(
