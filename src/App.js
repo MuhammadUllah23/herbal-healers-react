@@ -2,12 +2,14 @@ import './App.css';
 import { ThemeProvider } from '@mui/material';
 import theme from './components/ui/Theme'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
     <ThemeProvider theme={theme} >
       <BrowserRouter>
+        <NavBar />
         <Routes>
         <Route path="/" element={<div>Landing Page</div>}/>
           <Route path="/remedies" element={<div>List of Remedies</div>}/>

@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { useMediaQuery } from "@mui/material";
+import { AppBar, Toolbar, useMediaQuery } from "@mui/material";
 import { makeStyles } from "@mui/material";
 import { useTheme } from "@mui/material";
 import { useScrollTrigger } from "@mui/material";
@@ -32,7 +32,11 @@ export default function NavBar() {
 
     return(
         <React.Fragment>
-
+            <AppBar>
+                <Toolbar>
+                    
+                </Toolbar>
+            </AppBar>
         </React.Fragment>
     )
 }
