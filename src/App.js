@@ -1,6 +1,6 @@
 import './App.css';
 import { ThemeProvider } from '@mui/material';
-import theme from './ui/Theme'
+import theme from './components/ui/Theme'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
