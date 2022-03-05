@@ -41,7 +41,7 @@ export default function NavBar() {
     return(
         <React.Fragment>
         
-            <AppBar className={classes.appbar} position="fixed" >
+            <AppBar className={classes.appbar} position="static" >
                 <Toolbar className={classes.toolbarMargin} disableGutters>
                    
                 </Toolbar>
