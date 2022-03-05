@@ -52,7 +52,14 @@ export default function NavBar() {
     const tabs = (
             <React.Fragment>
                 <Tabs value={value} onChange={handleChange}>
-
+                {tabOptions.map((tab, index) => (
+                        <Tab 
+                         key={`${tab}${index}`}
+                         component={Link} 
+                         to={tab.link} 
+                         label={tab.name} 
+                         />
+                    ))}
                 </Tabs>
             </React.Fragment>
     )
