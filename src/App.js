@@ -4,6 +4,7 @@ import theme from './components/ui/Theme'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 
+
 function App() {
   return (
     <div className="App">

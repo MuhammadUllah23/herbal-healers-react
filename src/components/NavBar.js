@@ -8,6 +8,7 @@ import { useTheme } from "@mui/material";
 import { useScrollTrigger } from "@mui/material";
 import { Typography } from "@mui/material";
 
+
 function ElevationScroll(props) {
      
     const { children } = props;
@@ -27,6 +28,10 @@ function ElevationScroll(props) {
 const useStyles = makeStyles(theme => ({
     appbar: {
         zIndex: theme.zIndex.modal +  1
+    },
+    toolbarMargin: {
+        ...theme.mixins.toolbar,
+        marginBottom: "3em"
     }
 }))
 
@@ -35,9 +40,10 @@ export default function NavBar() {
     const classes = useStyles()
     return(
         <React.Fragment>
+        
             <AppBar className={classes.appbar}>
-                <Toolbar>
-
+                <Toolbar className={classes.toolbarMargin} disableGutters>
+                   
                 </Toolbar>
             </AppBar>
         </React.Fragment>
