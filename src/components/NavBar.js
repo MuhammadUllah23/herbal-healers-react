@@ -41,7 +41,7 @@ export default function NavBar() {
     const classes = useStyles()
 
     const tabOptions = [
-        {name: "Illnesses", link: "/illnesse"},
+        {name: "Illnesses", link: "/illnesses"},
         {name: "Remedies", link: "/remedies"}
     ]
 
@@ -69,7 +69,7 @@ export default function NavBar() {
         
             <AppBar className={classes.appbar} position="static" >
                 <Toolbar className={classes.toolbarMargin} disableGutters>
-                   
+                   {tabs}
                 </Toolbar>
             </AppBar>
         </React.Fragment>
