@@ -9,6 +9,8 @@ import { useScrollTrigger } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Tabs, Tab } from "@mui/material";
 
+import theme from './ui/Theme'
+
 
 function ElevationScroll(props) {
      
@@ -33,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     toolbarMargin: {
         ...theme.mixins.toolbar,
         marginBottom: "3em"
+    },
+    tab: {
+        ...theme.typography.tab
     }
 }))
 
@@ -54,6 +59,7 @@ export default function NavBar() {
                 <Tabs value={value} onChange={handleChange}>
                 {tabOptions.map((tab, index) => (
                         <Tab 
+                         className={classes.tab}
                          key={`${tab}${index}`}
                          component={Link} 
                          to={tab.link} 

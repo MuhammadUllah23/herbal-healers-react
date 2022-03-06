@@ -16,4 +16,9 @@ export default createTheme({
             main: `${yellowOrange}`
         }
     },
+    typography: {
+        tab: { 
+            fontSize: "2em"
+        }
+    }
 })
